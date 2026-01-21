@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255,255,255,0.25);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 26px;
+    white-space: pre-line; /* preserves line breaks in text */
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yesBtn {
+    background: #ed5067; /* Light pink */
+    color: white;
+    box-shadow: 0 0 15px rgba(255,182,193,0.6); /* soft glow */
+}
+
+#noBtn {
+    background: #ddd;
+    color: #333;
+}
+
+/* Floating hearts */
+.hearts::before,
+.hearts::after {
+    content: "❤️ 💕 💖 💘 💝";
+    position: absolute;
+    animation: float 15s linear infinite;
+    font-size: 24px;
+    opacity: 0.4;
+}
+
+.hearts::after {
+    animation-duration: 20s;
+}
+
+@keyframes float {
+    from { transform: translateY(100vh); }
+    to { transform: translateY(-100vh); }
+}
