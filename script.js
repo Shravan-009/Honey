@@ -107,6 +107,7 @@ noBtn.addEventListener("click", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    questionEl.innerHTML = "I LOVE YOU HONEY ❤️<br><br> YOU ARE ALL THE BEST  🌸";
+    questionEl.innerHTML = "I LOVE YOU HONEY ❤️<br><br> YOU ARE ALL THE BEST  🌸<br><br> VC ME NOW 😁";
     document.querySelector(".buttons").style.display = "none";
 });
+
